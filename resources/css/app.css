@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/*---------------------shape-bar----------------------*/
+
+.rectangle {
+    height: 160px;
+    width: 900px;
+    background-color: 	#FFFFFF;
+    opacity: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+
+.recButton {
+    height: 100px;
+    width: 100px;
+    background-color: 	#0000;
+}
+
+/*----------------------------------------------------*/
 
 /*---------------------navigation---------------------*/
 /* Add a black background color to the top navigation */
