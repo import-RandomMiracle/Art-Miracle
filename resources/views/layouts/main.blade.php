@@ -9,13 +9,13 @@
     @livewireStyles
 </head>
 <body>
-<nav>
+    <nav>
 
-</nav>
+    </nav>
 
-<div class="mx-auto max-w-6xl">
-    @yield('content')
-</div>
-    @livewireScripts
+    <div class="mx-auto max-w-6xl">
+        @yield('content')
+    </div>
+        @livewireScripts
 </body>
 </html>
