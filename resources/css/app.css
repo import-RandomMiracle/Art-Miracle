@@ -47,6 +47,10 @@
 .textArtworkPost {
     color: black;
 }
+
+.imageArtwork {
+    border-radius: 20px;
+}
 /*----------------------------------------------------*/
 
 /*---------------------navigation---------------------*/
@@ -107,6 +111,22 @@
 /*-----------------------button-----------------------*/
 .svgButton {
     margin-left: 28px;
+}
+
+.postCommnetButton {
+    color: #00264D;
+    background-color: #FFCB44;
+    width: 70px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.buyNowButton {
+    color: #00264D;
+    background-color: #FFCB44;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
 }
 /*----------------------------------------------------*/
 
