@@ -8,10 +8,8 @@
     @vite('resources/css/app.css','resources/scss/app.scss', 'resources/js/app.js')
     @livewireStyles
 </head>
-<body>
-    <nav>
-
-    </nav>
+<body class="min-h-screen backgroundHome">
+    @include('layouts.navbar')
 
     <div class="mx-auto max-w-6xl">
         @yield('content')
