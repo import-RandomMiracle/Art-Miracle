@@ -7,27 +7,54 @@
 .rectangle {
     height: 160px;
     width: 900px;
-    background-color: 	#FFFFFF;
-    opacity: 60%;
-    border-radius: 20px;
-    overflow: hidden;
-    position: fixed;
+    background-color: #FFFFFF;
+    opacity: 70%;
+    border-radius: 15px;
     bottom: 0;
     margin-bottom: 30px;
 }
 
-.recButton {
-    height: 100px;
-    width: 100px;
-    background-color: 	#0000;
+.postimg {
+    height: 300px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 15px;
 }
 
+.recButton {
+    height: 120px;
+    width: 120px;
+    background: #02386E;
+    opacity: 80%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+/*----------------------------------------------------*/
+
+/*----------------------Post--------------------------*/
+.postImage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.textArtistPost {
+    text-align: center;
+    color: black;
+}
+
+.textArtworkPost {
+    color: black;
+}
 /*----------------------------------------------------*/
 
 /*---------------------navigation---------------------*/
 /* Add a black background color to the top navigation */
 .topnav {
-    overflow: hidden;
+    padding: auto;
+    background: #00264D;
+    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
@@ -75,6 +102,12 @@
       border: 1px solid #ccc;  
     }
   }
+/*----------------------------------------------------*/
+
+/*-----------------------button-----------------------*/
+.svgButton {
+    margin-left: 28px;
+}
 /*----------------------------------------------------*/
 
 /*-------------------Welcome-page---------------------*/
