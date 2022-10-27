@@ -37,6 +37,11 @@ Route::get('/artwork', function (){
     return view('artwork');
 });
 
+Route::get('/artist', function (){
+    return view('artist');
+});
+
+
 
 
 Route::get('/account', function () {
