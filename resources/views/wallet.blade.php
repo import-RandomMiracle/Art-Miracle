@@ -22,16 +22,10 @@
         </div>
         <div class="space-y-5 mt-5">
             <div class="flex justify-center">
-                <button class="walletButton">
-                    <a href="trasferPage"></a>
-                    Transfer Money
-                </button>
+                <button class="walletButton" onclick="document.location='wallet/transfer'">Transfer Money</button>
             </div>
             <div class="flex justify-center">
-                <button class="walletButton">
-                    <a href="topUpPage"></a>
-                    Top Up
-                </button>
+                <button class="walletButton" onclick="document.location='wallet/topup'">Top Up</button>
             </div>
         </div>
     </div>

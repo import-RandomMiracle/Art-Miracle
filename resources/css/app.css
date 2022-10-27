@@ -53,6 +53,8 @@
 }
 
 .vertical-center {
+    position: absolute;
+    top: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
   }

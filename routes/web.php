@@ -25,6 +25,16 @@ Route::get('/wallet', function (){
     return view('wallet');
 });
 
+Route::get('/wallet/transfer', function (){
+    return view('transfer');
+});
+
+Route::get('/wallet/topup', function (){
+    return view('topup');
+});
+
+
+
 Route::get('/account', function () {
     return view('account');
 });
