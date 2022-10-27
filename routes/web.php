@@ -33,6 +33,10 @@ Route::get('/wallet/topup', function (){
     return view('topup');
 });
 
+Route::get('/artwork', function (){
+    return view('artwork');
+});
+
 
 
 Route::get('/account', function () {
