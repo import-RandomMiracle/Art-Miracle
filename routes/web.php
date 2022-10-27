@@ -21,6 +21,10 @@ Route::get('/store', function () {
     return view('store');
 });
 
+Route::get('/wallet', function (){
+    return view('wallet');
+});
+
 Route::get('/account', function () {
     return view('account');
 });
