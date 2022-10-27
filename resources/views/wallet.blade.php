@@ -17,17 +17,19 @@
             <div class="flex justify-center smalllinerectangle"></div>
         </div>
         <div class="flex justify-center space-x-5 text-white text-xl">
-            <p>1340.00</p>
+            <p>1340</p>
             <p>Points</p>
         </div>
         <div class="space-y-5 mt-5">
             <div class="flex justify-center">
                 <button class="walletButton">
+                    <a href="trasferPage"></a>
                     Transfer Money
                 </button>
             </div>
             <div class="flex justify-center">
                 <button class="walletButton">
+                    <a href="topUpPage"></a>
                     Top Up
                 </button>
             </div>

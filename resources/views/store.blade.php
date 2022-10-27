@@ -9,7 +9,7 @@
             <li>
                 <h1 class="text-gray-300 text-xl font-light">Price</h1>
             </li>
-            <li class="flex">
+            <li class="flex space-x-20">
                 <h1 class="text-white text-2xl font-semibold mb-3">5.00 AC</h1>
                 <div class="float-right flex space-x-4">
                     <h1 class="text-white text-2xl font-semibold mb-3">10K</h1>
@@ -80,8 +80,8 @@
             </p>
         </div>
         <p class="text-white mt-5 font-bold">Comment</p>
-        <div>
-            <textarea name="comments" id="comments" width="350">
+        <div class="flex m-5">
+            <textarea name="comments" id="comments" class="w-full">
             </textarea>
         </div>
         <button class="float-right postCommnetButton">
