@@ -49,6 +49,10 @@ Route::get('/account', function () {
     return view('account');
 });
 
+Route::get('/account/artistview', function () {
+    return view('artistview');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
