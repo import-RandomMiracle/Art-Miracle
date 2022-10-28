@@ -59,6 +59,10 @@
     border-radius: 10px;
 }
 
+.adminMenuButton {
+    width: auto;
+}
+
 .viewButton {
     background-color: greenyellow;
     width: 70px;

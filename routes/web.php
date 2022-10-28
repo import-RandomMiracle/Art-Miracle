@@ -49,8 +49,16 @@ Route::get('/account', function () {
     return view('account');
 });
 
-Route::get('/account/artistview', function () {
-    return view('artistview');
+Route::get('/account/artistreport', function () {
+    return view('artistreport');
+});
+
+Route::get('/account/postreport', function () {
+    return view('postreport');
+});
+
+Route::get('/account/commentreport', function () {
+    return view('commentreport');
 });
 
 Route::get('/dashboard', function () {

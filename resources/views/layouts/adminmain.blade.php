@@ -9,6 +9,7 @@
 </head>
 <body class="min-h-screen backgroundHome">
     @include('layouts.adminnav')
+    @include('layouts.adminmenu')
 
     <div class="mx-auto max-w-6xl">
         @yield('content')
