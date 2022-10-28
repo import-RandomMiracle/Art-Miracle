@@ -54,3 +54,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/add-sell', function () {
+    return view('sell');
+});

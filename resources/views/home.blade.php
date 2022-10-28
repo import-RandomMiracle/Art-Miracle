@@ -13,7 +13,7 @@
         </li>
     </ul>
 
-    <div class="flex justify-center m-20"> 
+    <div class="flex justify-center m-20">
         <div class="rectangle">
             <ul class="flex justify-center mt-7">
                 <li>
@@ -69,7 +69,7 @@
         </a>
     </div>
     <div>
-        <ul class="flex justify-center">
+        <ul class="flex justify-center ">
             <li>
                 <div class="postimg">
                     <img class="postImage" src="/images/Artist-1.png" alt="Miracle Work" height="" width="300" >
@@ -101,7 +101,7 @@
         </ul>
     </div>
     <div class="align-center mt-10">
-        <h1 class="text-2xl text-white text-center">FEATURED ARTWORK</h1> 
+        <h1 class="text-2xl text-white text-center">FEATURED ARTWORK</h1>
         <a href="/artwork">
             <p class="text-sm text-amber-400 text-center">View All Artwork</p>
         </a>

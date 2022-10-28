@@ -1,7 +1,7 @@
 <nav>
-    
+
     <div class="flex items-top backgroundWelcome topnav">
-        
+
         <div>
             <ul>
                 <div class="fixed topnav min-w-full">
@@ -18,8 +18,8 @@
 
                 @else
                     @if (Route::has('login'))
-                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block topnav">
-                            
+                        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block topnav ">
+
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-sm text-white dark:text-white underline">Dashboard</a>
                         @else
