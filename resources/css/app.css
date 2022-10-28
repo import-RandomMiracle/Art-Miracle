@@ -86,7 +86,7 @@
     background: #00264D;
     z-index: 1;
   }
-  
+
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
@@ -96,11 +96,11 @@
     text-decoration: none;
     font-size: 17px;
   }
-  
+
   /* Change the color of links on hover */
-  
+
   /* Add a color to the active/current link */
-  
+
   .topnav .search-container button {
     float: right;
     padding: 6px 10px;
@@ -115,7 +115,7 @@
   .topnav .search-container button:hover {
     background: #ccc;
   }
-  
+
   @media screen and (max-width: 600px) {
     .topnav .search-container {
       float: none;
@@ -129,7 +129,7 @@
       padding: 14px;
     }
     .topnav input[type=text] {
-      border: 1px solid #ccc;  
+      border: 1px solid #ccc;
     }
   }
 /*----------------------------------------------------*/
@@ -170,10 +170,15 @@
 /*-------------------Welcome-page---------------------*/
 .backgroundHome {
     background: #00264D;
-    background: linear-gradient(135deg, #00264D 25%, #02386E 75%, #0052A2 100%); 
+    background: linear-gradient(135deg, #00264D 25%, #02386E 75%, #0052A2 100%);
 }
 .welcomeText{
     color: #ddd;
+}
+
+.fullscreen-block{
+    width: 100vw;
+    height: 100vh;
 }
 /*----------------------------------------------------*/
 
@@ -186,7 +191,7 @@
     width: 100%;
     position: absolute;
     top:50vh;
-    
+
 }
 .context h1{
     text-align: center;
@@ -195,7 +200,7 @@
 }
 .area{
     background: #00264D;
-    background: linear-gradient(135deg, #00264D 25%, #02386E 75%, #0052A2 100%);  
+    background: linear-gradient(135deg, #00264D 25%, #02386E 75%, #0052A2 100%);
 }
 .circles {
     /* position: absolute;
@@ -286,15 +291,17 @@
 
     0%{
         transform: translateY(0) rotate(0deg);
-        
+
         border-radius: 0;
     }
 
     100%{
         transform: translateY(-1000px) rotate(720deg);
-        
+
         border-radius: 50%;
     }
 
 }
 /*-----------------------------------------------------*/
+
+
