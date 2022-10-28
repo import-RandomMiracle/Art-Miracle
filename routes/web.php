@@ -41,8 +41,9 @@ Route::get('/artist', function (){
     return view('artist');
 });
 
-
-
+Route::get('/account/artworkcomment', function (){
+    return view(('artworkcomment'));
+});
 
 Route::get('/account', function () {
     return view('account');
