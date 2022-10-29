@@ -57,6 +57,10 @@ Route::get('/account/postreport', function () {
     return view('postreport');
 });
 
+Route::get('/account/feedback', function () {
+    return view('feedback');
+});
+
 Route::get('/account/commentreport', function () {
     return view('commentreport');
 });
