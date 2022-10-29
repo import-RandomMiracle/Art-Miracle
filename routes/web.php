@@ -74,6 +74,12 @@ Route::get('/artist',function () {
     return view('artist', ['users' => ResourceController::getJson('users')]);
 });
 
+
+
+Route::get('/artwork',function () {
+    return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);
+});
+
 Route::get('/test',function () {
     return view('test', ['users' => ResourceController::getJson('users')]);
 });
