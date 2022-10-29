@@ -12,6 +12,7 @@
         </div>
 
         <div class="grid grid-cols-4 items-center">
+            @include('layouts.postartist')
             <div class="postimg">
                 <img class="postImage" src="/images/Artist-1.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textArtistPost font-bold">Artist Name : Ekko</h1>

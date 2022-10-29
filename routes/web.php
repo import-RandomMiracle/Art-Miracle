@@ -46,10 +46,6 @@ Route::get('/account/artworkcomment', function (){
     return view(('artworkcomment'));
 });
 
-Route::get('/test',function () {
-    return view('test', ['users' => ResourceController::getJson('users')]);
-});
-
 Route::get('/account', function () {
     return view('account');
 });
@@ -72,6 +68,14 @@ Route::get('/account/feedback', function () {
 
 Route::get('/account/commentreport', function () {
     return view('commentreport');
+});
+
+Route::get('/artist',function () {
+    return view('artist', ['users' => ResourceController::getJson('users')]);
+});
+
+Route::get('/test',function () {
+    return view('test', ['users' => ResourceController::getJson('users')]);
 });
 
 Route::get('/dashboard', function () {

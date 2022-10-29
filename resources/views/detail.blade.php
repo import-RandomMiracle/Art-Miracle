@@ -19,6 +19,7 @@
                 </div>
             </div>
             <div class="space-y-5">
+                @include('layouts.share')
                 @include('layouts.detaildescription')
                 
                 <div>
