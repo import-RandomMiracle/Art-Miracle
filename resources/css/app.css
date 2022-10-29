@@ -16,6 +16,13 @@
 
 .commentRectangle {
     height: auto;
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.feedbackRectangle {
+    height: auto;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 5px;
@@ -59,12 +66,39 @@
     border-radius: 10px;
 }
 
+.adminMenuButton {
+    width: auto;
+}
+
+.viewButton {
+    background-color: greenyellow;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 85%;
+}
+
+.banButton {
+    background-color: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    opacity: 85%;
+}
+
+.deleteButton {
+    background-color: #FFCB44;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+}
+
 .vertical-center {
     position: absolute;
     top: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-  }
+}
 
 /*----------------------------------------------------*/
 

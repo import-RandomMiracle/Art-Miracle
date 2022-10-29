@@ -18,8 +18,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/store', function () {
-    return view('store');
+Route::get('/artwork/detail', function () {
+    return view('detail');
 });
 
 Route::get('/wallet', function (){
@@ -52,6 +52,22 @@ Route::get('/test',function () {
 
 Route::get('/account', function () {
     return view('account');
+});
+
+Route::get('/account/artistreport', function () {
+    return view('artistreport');
+});
+
+Route::get('/account/postreport', function () {
+    return view('postreport');
+});
+
+Route::get('/account/feedback', function () {
+    return view('feedback');
+});
+
+Route::get('/account/commentreport', function () {
+    return view('commentreport');
 });
 
 Route::get('/dashboard', function () {
