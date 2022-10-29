@@ -5,8 +5,8 @@
 /*---------------------shape-bar----------------------*/
 
 .rectangle {
-    height: 160px;
-    width: 900px;
+    height: 140px;
+    width: 75%;
     background-color: #FFFFFF;
     opacity: 70%;
     border-radius: 15px;
