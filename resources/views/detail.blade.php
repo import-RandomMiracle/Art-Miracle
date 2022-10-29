@@ -2,12 +2,14 @@
 
 @section('content')
     <div class="float-left mr-12">
-        @include('layouts.artworkdetail')
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-2 mt-40">
             <div>
-                <h1 class="text-gray-300 text-xl font-light">Reward</h1>
-                <h1 class="text-white text-2xl font-semibold mb-3">30 POINT</h1>
-                <div class="flex space-x-5">
+                @include('layouts.detailshow')
+                <div class="ml-28">
+                    <h1 class="text-gray-300 text-xl font-light">Reward</h1>
+                    <h1 class="text-white text-2xl font-semibold mb-3">30 POINT</h1>
+                </div>
+                <div class="flex justify-center space-x-5">
                     <button class="buyNowButton text-xl font-bold">
                         BUY NOW
                     </button>
@@ -16,9 +18,11 @@
                     </svg>
                 </div>
             </div>
-            <div>
-                <p class="text-white font-bold">Comment</p>
+            <div class="space-y-5">
+                @include('layouts.detaildescription')
+                
                 <div>
+                    <p class="text-white font-bold">Comment</p>
                     <textarea name="comments" id="comments" class="w-full"></textarea>
                 </div>
                 <button class="float-right postCommnetButton">
