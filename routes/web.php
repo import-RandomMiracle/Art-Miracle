@@ -17,8 +17,8 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/store', function () {
-    return view('store');
+Route::get('/artwork/detail', function () {
+    return view('detail');
 });
 
 Route::get('/wallet', function (){
