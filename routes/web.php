@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ResourceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -43,6 +44,10 @@ Route::get('/artist', function (){
 
 Route::get('/account/artworkcomment', function (){
     return view(('artworkcomment'));
+});
+
+Route::get('/test',function () {
+    return view('test', ['users' => ResourceController::getJson('users')]);
 });
 
 Route::get('/account', function () {
