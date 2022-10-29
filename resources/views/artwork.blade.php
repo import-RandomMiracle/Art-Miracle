@@ -11,7 +11,7 @@
             <div class="linerectangle"></div>
         </div>
 
-        <div class="grid grid-cols-4 items-center">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">
             @include('layouts.post')
             <div class="postimg">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
