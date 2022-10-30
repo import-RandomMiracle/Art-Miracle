@@ -81,7 +81,7 @@ Route::get('/artwork',function () {
 });
 
 Route::get('/test',function () {
-    return view('test', ['users' => ResourceController::getJson('users')]);
+    return view('test');
 });
 
 Route::get('/dashboard', function () {
