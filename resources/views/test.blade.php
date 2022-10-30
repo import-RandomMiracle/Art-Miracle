@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        @include('layouts.banoption')
+        @include('layouts.confirmbanuser')
     </div>
 
 @endsection

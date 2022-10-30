@@ -2,11 +2,11 @@
     <div class="popupBanRectangle mt-48">
         <div class="mt-16">
             <div class="text-4xl text-center fontBanColor font-bold mt-2">
-                You Confirm To Transfer
+                You Confirm Ban This User?
             </div>
             <div class="justify-center">
                 <div class="mt-4 ml-10 mr-10 text-center">
-                    <h1 class="fontBanColor mr-2">If you've confirmed the transfer,it can't be edited.</h1>
+                    <h1 class="fontBanColor mr-2">If you've confirmed ban,it can't be edited.</h1>
                 </div>
             </div>
 
