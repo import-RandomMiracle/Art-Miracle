@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        @include('layouts.popupgiftto')
+        @include('layouts.reportproduct')
     </div>
 
 @endsection
