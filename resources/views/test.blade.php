@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        @include('layouts.reportproduct')
+        @include('layouts.confirmtransfer')
     </div>
 
 @endsection
