@@ -11,7 +11,7 @@
                         <h1 class="flex-none fontBanColor mr-2 font-bold text-2xl">BAN</h1>
                         <select class="flex-auto rounded-lg w-full bg-gray-300" name="" id="">
                             <div class="">
-                                <option disabled selected>>>เลือก<<</option>
+                                <option disabled selected>>>เลือกรายการ<<</option>
                                 <optgroup label="-----------------------------">
                                     <option value="ปิดกันผู้ใช้ 7 วัน">ปิดกันผู้ใช้ 7 วัน</option>
                                     <option value="ปิดกันผู้ใช้ 1 เดือน">ปิดกันผู้ใช้ 1 เดือน</option>
