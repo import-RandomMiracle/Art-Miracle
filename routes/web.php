@@ -46,6 +46,10 @@ Route::get('/account/artworkcomment', function (){
     return view(('artworkcomment'));
 });
 
+Route::get('/account/artworkdownload', function (){
+    return view(('artworkdownload'));
+});
+
 Route::get('/account/artworkedit', function (){
     return view(('artworkedit'));
 });
