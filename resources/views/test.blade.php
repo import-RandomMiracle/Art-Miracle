@@ -2,7 +2,7 @@
 
 @section('content')
     <div>
-        @include('layouts.confirmtransfer')
+        @include('layouts.banoption')
     </div>
 
 @endsection

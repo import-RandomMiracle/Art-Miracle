@@ -122,6 +122,12 @@
     width: 25%;
     border-radius: 10px;
 }
+.banPopupButton {
+    background-color: red;
+    height: 48px;
+    width: 25%;
+    border-radius: 10px;
+}
 .yesButton {
     background-color: #80DA71;
     height: 48px;
