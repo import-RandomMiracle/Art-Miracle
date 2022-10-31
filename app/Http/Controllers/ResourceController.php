@@ -11,7 +11,11 @@ class ResourceController extends Controller
     public static function getJson($name){
         $url = config('services.api.address') . str($name);
         $client = new Client();
-        $res = $client->request('GET',$url);
+//        dd($url);
+        // bug เนื่องจากไม่ได้ส่ง token ไปยัง backend
+        $res = $client->request('GET',$url,[
+            'timeout' => 10
+]);
 
         $json = json_decode($res->getBody(),true);
         return $json;
