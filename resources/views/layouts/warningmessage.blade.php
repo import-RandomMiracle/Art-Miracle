@@ -7,7 +7,7 @@
             @csrf
 
             <div class="justify-center">
-                <div class="flex mt-4 ml-10 mr-10">
+                <div class="flex m-5">
                     <h1 class="flex-none fontBanColor mr-2 font-bold text-xl">Message: </h1>
                     <select class="flex-auto rounded-lg w-full bg-gray-300" name="" id="">
                         <div class="">
@@ -23,7 +23,7 @@
                         </div>
                     </select>
                 </div>
-                <div class="flex mt-4 ml-10 mr-10">
+                <div class="flex m-5">
                     <h1 class="flex-none fontBanColor mr-2 font-bold">Description: </h1>
                     <textarea rows="4" type="text" name="description" class="flex-auto mt-1 w-full rounded-lg bg-gray-300" required></textarea>
                 </div>

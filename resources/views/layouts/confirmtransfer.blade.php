@@ -5,18 +5,18 @@
                 You Confirm To Transfer
             </div>
             <div class="justify-center">
-                <div class="mt-4 ml-10 mr-10 text-center">
+                <div class="m-5 text-center">
                     <h1 class="fontBanColor mr-2">If you've confirmed the transfer,it can't be edited.</h1>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 place-items-stretch ">
-                <div class="mt-14 m-14">
+            <div class="grid grid-cols-2 place-items-stretch mt-14 m-14 space-x-5">
+                <div class="">
                     <button class="yesButton font-bold text-2xl">
                         YES
                     </button>
                 </div>
-                <div class="mt-14 m-14">
+                <div class="">
                     <button class="noButton font-bold text-2xl">
                         NO
                     </button>
