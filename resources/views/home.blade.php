@@ -4,14 +4,14 @@
     <ul class="flex justify-center mt-40">
         <div>
             <li class="mt-5">
-                <p class="text-2xl text-zinc-50 mb-4">we provide the best</p>
-                <h1 class="sm:text-2xl text-5xl text-zinc-50 mb-4">Create,  Discover, Share, Sell</h1>
-                <h1 class="text-5xl text-zinc-50 mb-4">Creative Artwork and</h1>
-                <h1 class="text-5xl text-red-400">collect NFT</h1>
+                <p class="text-2xl text-zinc-50 mb-4 fontSizeCenter">we provide the best</p>
+                <h1 class="text-5xl text-zinc-50 mb-4 fontSizeCenter">Create,  Discover, Share, Sell</h1>
+                <h1 class="text-5xl text-zinc-50 mb-4 fontSizeCenter">Creative Artwork and</h1>
+                <h1 class="text-5xl text-red-400 fontSizeCenter">collect NFT</h1>
             </li>
         </div>
         <div class="">
-            <li class="ml-20 slideshow-container">
+            <li class="hidden ml-20 md:block slideshow-container">
                 <img class="rounded-full" src="/images/Proflie.png" alt="Miracle Work" height="" width="300" >
             </li>
         </div>
@@ -19,7 +19,7 @@
     </ul>
 
     <div class="">
-        <div class="flex justify-center">
+        <div class="flex justify-center ">
             <div class="rectangle">
                     <ul class="flex justify-center mt-2 relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-5">
                         <div class="snap-start scroll-mx-6 shrink-0">
