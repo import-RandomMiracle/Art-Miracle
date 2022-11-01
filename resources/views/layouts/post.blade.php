@@ -1,7 +1,7 @@
-@foreach($artworks['data'] as $artwork)    
+@foreach($artworks['data'] as $artwork)
     <div class="postimg">
     <a href="/artwork/detail">
-        <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
+        <img class="postImage" src="{{config('services.api.address') . $artwork['image']['resize_path']}}" alt="Miracle Work" height="" width="300" >
         <div class="flex justify-between m-1">
             <div class="">
                 <h1 class="font-bold w-50 truncate ml-2">{{$artwork['art_name']}}</h1>

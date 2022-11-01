@@ -12,7 +12,7 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">
-{{--            @include('layouts.post')--}}
+            @include('layouts.post')
             <div class="postimg">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake

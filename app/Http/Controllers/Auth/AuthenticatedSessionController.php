@@ -37,7 +37,7 @@ class AuthenticatedSessionController extends Controller
 
         $client = new Client();
 
-        $response = $client->request('POST', config('services.api.address') . "login", ['json' => ['email' => $request->email, 'password' => $request->password]]);
+        $response = $client->request('POST', config('services.api.address') . "/api/login", ['json' => ['email' => $request->email, 'password' => $request->password]]);
         setcookie("token", json_decode($response->getBody())->authorisation->token);
         // return $_COOKIE["token"];
         return view('home');
