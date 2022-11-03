@@ -484,4 +484,12 @@
         width: 50%;
         border-radius: 10px;
     }
+
+    .hiddenButton {
+        display: none;
+    }
+
+    .showButton {
+        display: block;
+    }
 }
