@@ -467,7 +467,11 @@
     }
 
     .marginLeft {
-        margin-left: 1.5rem;
+        margin-left: 2.25rem;
+    }
+
+    .marginCommentLeft {
+        margin-left: 0.5rem;
     }
 
     .marginRewardLeft {
