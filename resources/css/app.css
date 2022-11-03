@@ -473,4 +473,11 @@
     .marginRewardLeft {
         margin-left: 0px;
     }
+
+    .walletButtonResponsive {
+        background-color: #FFCB44;
+        height: 40px;
+        width: 50%;
+        border-radius: 10px;
+    }
 }
