@@ -78,7 +78,7 @@
 .walletButton {
     background-color: #FFCB44;
     height: 40px;
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -472,9 +472,5 @@
 
     .marginRewardLeft {
         margin-left: 0px;
-    }
-
-    .postButtonMargin {
-        margin-top: 0px;
     }
 }

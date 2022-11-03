@@ -26,7 +26,7 @@
                     <p class="text-white font-bold">Comment</p>
                     <textarea name="comments" id="comments" class="w-full"></textarea>
                 </div>
-                <button class="float-right postCommnetButton postButtonMargin">
+                <button class="float-right postCommnetButton">
                     Post
                 </button>
             </div>
