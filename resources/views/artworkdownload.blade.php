@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="float-left mr-12">
-        <div class="grid grid-cols-2 mt-40">
-            <div>
+        <div class="grid grid-cols-2 mt-40 gridScreen">
+            <div class="marginLeft">
                 @include('layouts.detailshow')
-                <div class="ml-28">
+                <div class="ml-28 marginRewardLeft">
                     <h1 class="text-red-500">This file type : .PNG</h1>
                 </div>
                 <div class="flex justify-center space-x-5 m-5">
@@ -17,10 +17,10 @@
                     </button>
                 </div>
             </div>
-            <div class="space-y-5">
+            <div class="space-y-5 marginLeft">
                 @include('layouts.sharenoflag')
                 @include('layouts.detaildescription')
-                
+
                 <div class="space-y-2">
                     <p class="text-white font-bold">Comment</p>
                     <div class="border-2 rounded-md">
@@ -30,7 +30,7 @@
                         <p class="text-gray-300 m-1">comment</p>
                         <p class="text-gray-300 m-1">comment</p>
                     </div>
-                    
+
                 </div>
                 <a href="" class="text-amber-400 float-right">
                     <p class="text-sm">View All Comment</p>
