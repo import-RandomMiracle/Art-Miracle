@@ -2,10 +2,10 @@
 
 @section('content')
     <div class="float-left mr-12">
-        <div class="grid grid-cols-2 mt-40">
-            <div>
+        <div class="grid grid-cols-2 mt-40 gridScreen">
+            <div class="mb-4 marginLeft">
                 @include('layouts.detailshow')
-                <div class="ml-28">
+                <div class="ml-28 marginRewardLeft">
                     <h1 class="text-gray-300 text-xl font-light">Reward</h1>
                     <h1 class="text-white text-2xl font-semibold mb-3">30 POINT</h1>
                 </div>
@@ -18,19 +18,19 @@
                     </svg>
                 </div>
             </div>
-            <div class="space-y-5">
+            <div class="space-y-5 ml-6 mb-8">
                 @include('layouts.share')
                 @include('layouts.detaildescription')
-                
+
                 <div>
                     <p class="text-white font-bold">Comment</p>
                     <textarea name="comments" id="comments" class="w-full"></textarea>
                 </div>
-                <button class="float-right postCommnetButton">
+                <button class="float-right postCommnetButton postButtonMargin">
                     Post
                 </button>
             </div>
         </div>
     </div>
-    
+
 @endsection

@@ -459,3 +459,22 @@
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .gridScreen {
+        margin-top: 9rem;
+        grid-template-columns: 1fr;
+    }
+
+    .marginLeft {
+        margin-left: 1.5rem;
+    }
+
+    .marginRewardLeft {
+        margin-left: 0px;
+    }
+
+    .postButtonMargin {
+        margin-top: 0px;
+    }
+}
