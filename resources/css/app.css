@@ -449,4 +449,13 @@
 
 }
 
+@media screen and (max-width: 600px) {
+    .wrapScreen {
+        flex-wrap: wrap;
+    }
 
+    .imageWrap {
+        flex-wrap: wrap;
+    }
+
+}

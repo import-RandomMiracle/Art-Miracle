@@ -12,9 +12,9 @@
             <button class="postButton">GALLERY</button>
         </div>
         <div class="mr-30 ml-30">
-            <ul class="flex justify-center">
+            <ul class="flex justify-center imageWrap">
                 <li>
-                    <div class="postimg">
+                    <div class="postimg imageScale">
                         <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                         <h1 class="ml-2 textpost font-bold">Product Name : Sushi
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="postimg">
+                    <div class="postimg imageScale">
                         <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                         <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -36,7 +36,7 @@
                     </div>
                 </li>
                 <li>
-                    <div class="postimg">
+                    <div class="postimg imageScale">
                         <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                         <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
