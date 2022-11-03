@@ -493,3 +493,32 @@
         display: block;
     }
 }
+
+/*-------------------responsive admin menu------------------------*/
+@media screen and (max-width: 600px) {
+    /*.gridCols {*/
+    /*    grid-template-rows: repeat(2, minmax(0, 1fr));*/
+    /*}*/
+
+    .flexCols {
+        flex-direction: column;
+    }
+
+    .size {
+        font-size: 1rem;
+    }
+
+    .marginLeft {
+        margin-left: 40px;
+    }
+
+    .flexCenter {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .flexCenterEightRem {
+        margin-left: 8rem;
+    }
+}
