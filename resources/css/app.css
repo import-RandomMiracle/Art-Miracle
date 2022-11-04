@@ -507,6 +507,10 @@
         height: auto;
         width: 80%;
     }
+
+    .marginZeroLeft {
+        margin-left: 0px;
+    }
 }
 
 /*-------------------responsive admin menu------------------------*/
