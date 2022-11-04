@@ -492,6 +492,21 @@
     .showButton {
         display: block;
     }
+
+    .gapCols {
+        column-gap: 2.5rem;
+    }
+
+    .gridTwoCols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        font-size: 0.75rem;
+        margin-left: 1rem;
+    }
+
+    .imageReport {
+        height: auto;
+        width: 80%;
+    }
 }
 
 /*-------------------responsive admin menu------------------------*/
