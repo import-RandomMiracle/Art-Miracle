@@ -265,6 +265,15 @@
     border-radius: 20px;
 }
 
+.deleteButton {
+    color: #00264D;
+    background-color: red;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    opacity: 85%;
+}
+
 .postButton {
     color: #FFFFFF;
 }
@@ -490,7 +499,9 @@
     }
 
     .showButton {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .gapCols {

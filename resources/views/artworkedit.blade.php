@@ -8,11 +8,19 @@
                 <div class="ml-28 marginCommentLeft hiddenButton">
                     <h1 class="text-red-500">Deleting is a permanent cannot be recovered.</h1>
                 </div>
-                <div class="flex justify-center space-x-5 m-5 hiddenButton">
-                    <button class="buyNowButton text-xl font-bold">
-                        SAVE
-                    </button>
+                <div class="flex flex-row">
+                    <div class="flex justify-center space-x-5 m-5 hiddenButton">
+                        <button class="deleteButton text-xl font-bold">
+                            DELETE
+                        </button>
+                    </div>
+                    <div class="flex justify-center space-x-5 m-5 hiddenButton">
+                        <button class="buyNowButton text-xl font-bold">
+                            SAVE
+                        </button>
+                    </div>
                 </div>
+
             </div>
             <form method="POST" action="">
                 @csrf
@@ -34,7 +42,12 @@
                 <div class="hidden ml-28 marginCommentLeft text-center showButton">
                     <h1 class="text-red-500">Deleting is a permanent cannot be recovered.</h1>
                 </div>
-                <div class="hidden flex justify-center space-x-5 m-5 ml-20 mt-1 showButton">
+                <div class="hidden flex justify-center space-x-5 m-5 mt-1 showButton">
+                    <button class="deleteButton text-xl font-bold">
+                        DELETE
+                    </button>
+                </div>
+                <div class="hidden flex justify-center space-x-5 m-5 mt-1 showButton">
                     <button class="buyNowButton text-xl font-bold">
                         SAVE
                     </button>
