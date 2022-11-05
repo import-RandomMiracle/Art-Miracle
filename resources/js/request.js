@@ -1,7 +1,7 @@
 function getUser() {
-    user = null;
-    httpRequest = new XMLHttpRequest();
-    httpRequest.open();
+    // user = null;
+    // httpRequest = new XMLHttpRequest();
+    // httpRequest.open();
 
-    return user;
+    // return user;
 }
