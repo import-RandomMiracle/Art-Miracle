@@ -148,6 +148,9 @@ Route::get('/home',function () {
         'currentUser' => ResourceController::getJson('user/current')]);
 });
 
+Route::get('/account',function () {
+    return view('account', ['user' => ResourceController::getJson('user/current')]);
+});
 
 Route::get('/test', function () {
     return view('test');
