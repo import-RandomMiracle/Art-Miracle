@@ -10,8 +10,10 @@
 <body class="min-h-screen backgroundHome">
     @if($currentUser['data']['role'] == 'USER')
             @include('layouts.navbaruser')
+    @else
+            @include('layouts.navbar')
     @endif
-        @include('layouts.navbar')
+        
 
     <div class="mx-auto max-w-6xl">
         @yield('content')

@@ -149,7 +149,7 @@ Route::get('/home',function () {
 });
 
 Route::get('/account',function () {
-    return view('account', ['user' => ResourceController::getJson('user/current')]);
+    return view('account', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/test', function () {
