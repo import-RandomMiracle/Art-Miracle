@@ -71,6 +71,11 @@ Route::get('/artwork', function () {
     return view('artwork', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
+Route::get('/artwork/detail/{id}', function ($id) {
+    return view('detail', ['currentUser' => ResourceController::getJson('user/current'),
+                            'artwork' => ResourceController::getJson('artworks/'.$id)]);
+});
+
 Route::get('/artist', function () {
     return view('artist', ['currentUser' => ResourceController::getJson('user/current')]);
 });
@@ -105,6 +110,11 @@ Route::get('/account', function () {
 
 Route::get('/admin/artistreport', function () {
     return view('artistreport', ['currentUser' => ResourceController::getJson('user/current')]);
+});
+
+Route::get('/admin/artistreport', function () {
+    return view('artistreport', ['currentUser' => ResourceController::getJson('user/current'),
+                                'reports' => ResourceController::getJson('reports')]);
 });
 
 Route::get('/admin/postreport', function () {
@@ -147,7 +157,8 @@ Route::get('/home',function () {
 });
 
 Route::get('/account',function () {
-    return view('account', ['currentUser' => ResourceController::getJson('user/current')]);
+    return view('account', ['currentUser' => ResourceController::getJson('user/current'),
+                            'artworks' => ResourceController::getJson('my/artworks')]);
 });
 
 Route::get('/test', function () {

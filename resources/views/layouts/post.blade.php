@@ -1,6 +1,6 @@
 @foreach($artworks['data'] as $artwork)
     <div class="snap-start scroll-mx-6 shrink-0 postimg">
-    <a href="/artwork/detail">
+    <a href="/artwork/detail/{{$artwork['id']}}">
         {{-- <img class="postImage" src="{{config('services.api.address') . $artwork['image']['resize_path']}}" alt="Miracle Work" height="" width="300" >
          --}}
         <img class="postImage" src="http://localhost:3000{{$artwork['image']}}" alt="Miracle Work" height="" width="300" >

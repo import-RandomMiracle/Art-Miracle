@@ -33,7 +33,7 @@
                                 <a class="ml-4" style="float: left" href="/home/benefits">Benefits</a>
                                 <a class="ml-4" style="float: left" href="/home/faq">FAQ</a>
                                 <a class="ml-4" style="float: left" href="/home/contact">Contact</a>
-                                <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search..">
+                                {{-- <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search.."> --}}
                                 @include('layouts.infouser')
                             @endauth
                         </div>
