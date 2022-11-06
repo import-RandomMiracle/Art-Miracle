@@ -32,6 +32,22 @@ Route::post('image/store', [ResourceController::class,'storeImage'])->name('imag
 //     return redirect('home');
 // });
 
+Route::get('/home/about', function () {
+    return view('about');
+});
+
+Route::get('/home/benefits', function () {
+    return view('benefits');
+});
+
+Route::get('/home/faq', function () {
+    return view('faq');
+});
+
+Route::get('/home/contact', function () {
+    return view('contact');
+});
+
 Route::get('/artwork/detail', function () {
     return view('detail');
 });

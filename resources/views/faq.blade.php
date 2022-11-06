@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <div>
+    <div class="mt-40">
         <h1>FAQs</h1>
 
         <div>

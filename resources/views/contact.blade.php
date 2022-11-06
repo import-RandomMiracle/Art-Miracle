@@ -1,27 +1,19 @@
 @extends('layouts.main')
 
 @section('content')
-    <div>
-        Contect us
-    </div>
+    <div class="mt-40">
+        <div class="flex justify-center">
+            <div class="linerectangle"></div>
+        </div>
+        <h1 class="text-white text-4xl uppercase font-bold text-center m-4">Contact</h1>
+        <div class="flex justify-center">
+            <div class="linerectangle"></div>
+        </div>
+        <div class="text-white text-xl mt-10 space-y-10 text-center">
+            <h2>address : 50 Ngamwongwan Rd, Chatuchak Bangkok 10900</h2>
+            <h2>phone : 02-123-4567</h2>
+            <h2>email : support@art.miracle</h2>
+        </div>
 
-    <div>
-        <h2>address</h2>
-        <p>
-            50 Ngamwongwan Rd, Chatuchak Bangkok 10900
-        </p>
-        <!-- ถ้าใส่แผนที่ไปด้วยคิดว่าน่าจะดี -->
     </div>
-
-    <div>
-        <h2>phone</h2>
-        <p>
-            02-123-4567
-        </p>
-        <h2>email</h2>
-        <p>
-            support@art.miracle
-        </p>
-    </div>
-
 @endsection
