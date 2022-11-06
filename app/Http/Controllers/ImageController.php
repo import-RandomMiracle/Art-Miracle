@@ -74,4 +74,20 @@ class ImageController extends Controller
             'body' => ['artwork_id' => $artwork_id]
         ]);
     }
+
+    public function sendImage($artwork_id,$user_id){
+        $headers = [
+            'Authorization' => 'Bearer ' . $_COOKIE['token'],
+            'Accept' => 'application/json',
+        ];
+
+        $url = config('services.api.address') . '/api/gift/artwork';
+        $client = new Client();
+        $res = $client->request('POST', $url, [
+            'headers' => $headers,
+            'timeout' => 10,
+            'body' => ['artwork_id' => $artwork_id,
+                        'user_id' => $user_id]
+        ]);
+    }
 }
