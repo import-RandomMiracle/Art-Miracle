@@ -75,6 +75,15 @@
     align-items: center;
 }
 
+.sendButton {
+    height: 120px;
+    width: 120px;
+    background: #FFCB44;
+    opacity: 80%;
+    border-radius: 20px;
+    align-items: center;
+}
+
 .walletButton {
     background-color: #FFCB44;
     height: 40px;
