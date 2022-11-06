@@ -2,15 +2,16 @@
 
 @section('content')
         <div class="mt-48">
-            <form method="POST" action="" class="justify-end">
+            <form method="post" action="{{ route('image.store') }}"
+                  enctype="multipart/form-data">
                 @csrf
 
                 <div class="flex flex-row justify-center">
                     <div class="">
                         <ul>
                             <li class="ml-20">
-                                <img class="imageArtwork" src="/images/Proflie.png" alt="Miracle Art Work" height="" width="350" >
-                            </li>
+                                <label for="img">Select image:</label>
+                                <input type="file" id="img" name="artwork" accept="image/*">                            </li>
                         </ul>
                     </div>
 
@@ -41,7 +42,7 @@
                 </div>
 
                 <div class="flex items-center justify-center mt-10">
-                    <button class="ml-3 bg-yellow-500 rounded-lg p-2 w-1/5 font-bold">
+                    <button type="submit" class="ml-3 bg-yellow-500 rounded-lg p-2 w-1/5 font-bold">
                         POST
                     </button>
                 </div>
