@@ -4,7 +4,7 @@
     <div>
         <h1>Benefits</h1>
         <p>
-            1. การลงขายผลงานจะไม่มีค่าใช้จ่ายใดๆสำหรับผู้ลงงาน แต่ในทุกผลงานที่ขายได้ รายได้จะถูกแบ่งออกมา 10% ให้กับ Art Miracle และ 90% ให้กับผู้ลงขายผลงาน
+        1. There will be no cost for the listing of artworks for the exhibitor. But in every work that can be sold Revenue will be divided 10% to Art Miracle and 90% to the contributor.    
         </p>
     </div>
 
