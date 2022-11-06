@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ImageController;
 use App\Http\Controllers\BuyController;
 use App\Http\Controllers\ResourceController;
 use Illuminate\Support\Facades\Route;
@@ -27,7 +28,7 @@ Route::get('/tag', function () {
     return view('tag');
 });
 
-Route::post('image/store', [ResourceController::class,'storeImage'])->name('image.store');
+Route::post('image/store', [ImageController::class,'storeImage'])->name('image.store');
 Route::post('buy/artwork', [BuyController::class,'buyArtwork'])->name('buy.artwork');
 
 // Route::get('/home', function () {
