@@ -18,6 +18,18 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/category', function () {
+    return view('category');
+});
+
+Route::get('/tag', function () {
+    return view('tag');
+});
+
+// Route::get('/home', function () {
+//     return redirect('home');
+// });
+
 Route::get('/artwork/detail', function () {
     return view('detail');
 });
@@ -86,7 +98,17 @@ Route::get('/artist',function () {
     return view('artist', ['users' => ResourceController::getJson('users')]);
 });
 
+Route::get('/account/artworkcomment',function () {
+    return view('artworkcomment', ['artworks' => ResourceController::getJson('artworks')]);
+});
 
+Route::get('/category',function () {
+    return view('category', ['categories' => ResourceController::getJson('categories')]);
+});
+
+Route::get('/tag',function () {
+    return view('tag', ['tags' => ResourceController::getJson('tags')]);
+});
 
 Route::get('/artwork',function () {
     return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);

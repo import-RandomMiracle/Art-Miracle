@@ -2,7 +2,7 @@
     <div class="popupBanRectangle mt-48"> 
         <div class="text-4xl text-center fontBanColor font-bold mt-2">
             
-            <p>Report This Product <span class="close flex justify-end mr-5">&times;</span></p>
+            <p>Report This User <span class="close flex justify-end mr-5">&times;</span></p>
             
         </div>
         <form method="POST" action="" class="justify-end">

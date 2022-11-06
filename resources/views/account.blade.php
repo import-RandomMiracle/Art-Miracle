@@ -6,11 +6,7 @@
         <div class="flex justify-center m-5">
             <div class="flex justify-center linerectangle"></div>
         </div>
-        <div class="flex justify-center space-x-10">
-            <button class="postButton">IMAGE</button>
-            <button class="postButton">MODEL</button>
-            <button class="postButton">GALLERY</button>
-        </div>
+        @include('layouts.manusort')
         <div class="mr-30 ml-30">
             <ul class="flex justify-center imageWrap">
                 <li>

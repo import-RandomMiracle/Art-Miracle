@@ -30,10 +30,10 @@
                         <a href="{{ url('/dashboard') }}" class="text-sm text-white dark:text-white underline">Dashboard</a>
                         @else
                             <div>
-                                <a class="" style="float: left" href="#about">Home</a>
-                                <a class="ml-4" style="float: left" href="benefits">Artwork</a>
-                                <a class="ml-4" style="float: left" href="faq">Artists</a>
-                                <a class="ml-4" style="float: left" href="contact">Caegory</a>
+                                <a class="" style="float: left" href="/home">Home</a>
+                                <a class="ml-4" style="float: left" href="/artwork">Artwork</a>
+                                <a class="ml-4" style="float: left" href="/artist">Artists</a>
+                                <a class="ml-4" style="float: left" href="/caegory">Caegory</a>
                                 <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search..">
                             </div>
                     @endauth
