@@ -143,7 +143,9 @@ Route::get('/artwork', function () {
 });
 
 Route::get('/home',function () {
-    return view('home', ['artworks' => ResourceController::getJson('artwork/most/4'),'users' => ResourceController::getJson('artist/most/4')]);
+    return view('home', ['artworks' => ResourceController::getJson('artwork/most/4'),
+        'users' => ResourceController::getJson('artist/most/4'),
+        'currentUser' => ResourceController::getJson('user/current')]);
 });
 
 

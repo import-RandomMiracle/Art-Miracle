@@ -8,8 +8,7 @@
     @vite('resources/css/app.css','resources/scss/app.scss', 'resources/js/app.js')
 </head>
 <body class="min-h-screen backgroundHome">
-    
-    @if(Route::has('user'))
+    @if($currentUser['data']['role'] == 'USER')
             @include('layouts.navbaruser')
     @endif
         @include('layouts.navbar')

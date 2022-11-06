@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\ResourceController;
 use App\Http\Requests\Auth\LoginRequest;
 use GuzzleHttp\Client;
 use GuzzleHttp\Cookie\CookieJar;
