@@ -54,6 +54,14 @@ Route::get('/artist', function (){
     return view('artist');
 });
 
+Route::get('/feedback', function (){
+    return view('sendfeedback');
+});
+
+Route::get('/changetoartist', function (){
+    return view('change');
+});
+
 Route::get('/account/artworkcomment', function (){
     return view(('artworkcomment'));
 });
