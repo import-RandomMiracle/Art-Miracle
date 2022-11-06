@@ -2,15 +2,20 @@
 
 @section('content')
     <ul class="flex justify-center mt-40">
-        <li class="mt-5">
-            <p class="text-2xl text-zinc-50 mb-4">we provide the best</p>
-            <h1 class="text-5xl text-zinc-50 mb-4">Create,  Discover, Share, Sell</h1>
-            <h1 class="text-5xl text-zinc-50 mb-4">Creative Artwork and</h1>
-            <h1 class="text-5xl text-red-400">collect NFT</h1>
-        </li>
-        <li class="ml-20 slideshow-container">
-            <img class="rounded-full" src="/images/Proflie.png" alt="Miracle Work" height="" width="300" >
-        </li>
+        <div>
+            <li class="mt-5">
+                <p class="text-2xl text-zinc-50 mb-4 fontSizeCenter">we provide the best</p>
+                <h1 class="text-5xl text-zinc-50 mb-4 fontSizeCenter">Create,  Discover, Share, Sell</h1>
+                <h1 class="text-5xl text-zinc-50 mb-4 fontSizeCenter">Creative Artwork and</h1>
+                <h1 class="text-5xl text-red-400 fontSizeCenter">collect NFT</h1>
+            </li>
+        </div>
+        <div class="">
+            <li class="hidden ml-20 md:block slideshow-container">
+                <img class="rounded-full" src="/images/Proflie.png" alt="Miracle Work" height="" width="300" >
+            </li>
+        </div>
+
     </ul>
 
     <div class="flex justify-center m-20">
@@ -60,39 +65,44 @@
                     </button>
                 </li>
             </ul>
+
         </div>
     </div>
+
     <div class="align-center">
         <h1 class="text-2xl text-white text-center">FEATURED ARTISTS</h1>
         <a href="/artist">
             <p class="text-sm text-amber-400 text-center">View All Artists</p>
         </a>
     </div>
-    <div>
-        <ul class="flex justify-center ">
+    <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-5">
+        <div class="snap-start scroll-mx-6 shrink-0">
+            <div class="shrink-0 w-0"></div>
+        </div>
+        <ul class="flex justify-center">
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artist-1.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textArtistPost font-bold">Artist Name : Ekko</h1>
                     <p class="ml-2 textArtistPost text-sm">Follower : 15000 people</p>
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artist-2.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textArtistPost font-bold">Artist Name : Helen</h1>
                     <p class="ml-2 textArtistPost text-sm">Follower : 12700 people</p>
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artist-3.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textArtistPost font-bold">Artist Name : Devie</h1>
                     <p class="ml-2 textArtistPost text-sm">Follower : 23400 people</p>
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artist-4.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textArtistPost font-bold">Artist Name : Koi</h1>
                     <p class="ml-2 textArtistPost text-sm">Follower : 9740 people</p>
@@ -106,10 +116,13 @@
             <p class="text-sm text-amber-400 text-center">View All Artwork</p>
         </a>
     </div>
-    <div>
+    <div class="relative w-full flex gap-6 snap-x snap-mandatory overflow-x-auto pb-5">
+        <div class="snap-start scroll-mx-6 shrink-0">
+            <div class="shrink-0 w-0"></div>
+        </div>
         <ul class="flex justify-center">
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textpost font-bold">Product Name : Sushi
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -120,7 +133,7 @@
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -131,7 +144,7 @@
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -142,7 +155,7 @@
                 </div>
             </li>
             <li>
-                <div class="postimg">
+                <div class="snap-start scroll-mx-6 shrink-0 postimg">
                     <img class="postImage" src="/images/Artwork-4.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textpost font-bold">Product Name : Donut
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">

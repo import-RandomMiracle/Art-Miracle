@@ -1,11 +1,11 @@
 <div>
-    <ul class="flex justify-center mt-40 space-x-7">
+    <ul class="flex wrapScreen justify-center mt-40 space-x-7">
         <li>
-            <img class="rounded-full" src="/images/Profile-2.png" alt="UserProfile" height="" width="200" >
+            <img class="rounded-full mb-4" src="/images/Profile-2.png" alt="UserProfile" height="" width="200" >
         </li>
         <li>
             <div class="space-y-5">
-                <div class="flex space-x-10">
+                <div class="flex space-x-10 mr-6">
                     <h1 class="text-white text-xl font-bold">Miracle Artist</h1>
                     <button class="editProfileButton text-white text-sm">Edit Profile</button>
                     <a href="/wallet">
@@ -20,13 +20,13 @@
                     </button>
                 </div>
                 <ul class="space-y-5">
-                    <li class="flex justify-center space-x-20 text-white">
+                    <li class="flex justify-center space-x-20 text-white mr-6">
                         <p>post</p>
                         <p>followers</p>
                         <p>following</p>
                     </li>
                     <li>
-                        <p class="text-gray-300">Hello my name is miracle you can see my artwork on profile now</p>
+                        <p class="text-gray-300 mr-4">Hello my name is miracle you can see my artwork on profile now</p>
                     </li>
                 </ul>
             </div>
@@ -34,6 +34,7 @@
 
     </ul>
 </div>
+
 
 <div id="myModal" class="modal">
 
@@ -71,3 +72,4 @@ if (event.target == modal) {
 }
 }
 </script>
+
