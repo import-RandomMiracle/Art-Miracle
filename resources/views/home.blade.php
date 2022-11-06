@@ -68,8 +68,9 @@
             <p class="text-sm text-amber-400 text-center">View All Artists</p>
         </a>
     </div>
-    <div>
-        <ul class="flex justify-center ">
+    <div class="flex justify-center">
+        @include('layouts.posttop4artist')
+        {{-- <ul class="flex justify-center ">
             <li>
                 <div class="postimg">
                     <img class="postImage" src="/images/Artist-1.png" alt="Miracle Work" height="" width="300" >
@@ -98,7 +99,7 @@
                     <p class="ml-2 textArtistPost text-sm">Follower : 9740 people</p>
                 </div>
             </li>
-        </ul>
+        </ul> --}}
     </div>
     <div class="align-center mt-10">
         <h1 class="text-2xl text-white text-center">FEATURED ARTWORK</h1>
@@ -106,8 +107,9 @@
             <p class="text-sm text-amber-400 text-center">View All Artwork</p>
         </a>
     </div>
-    <div>
-        <ul class="flex justify-center">
+    <div class="flex justify-center">
+        @include('layouts.posttop4')
+        {{-- <ul class="flex justify-center">
             <li>
                 <div class="postimg">
                     <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
@@ -152,6 +154,6 @@
                     <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
                 </div>
             </li>
-        </ul>
+        </ul> --}}
     </div>
 @endsection

@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-4 items-center">
             @include('layouts.postartist')
-            <div class="postimg">
+            {{-- <div class="postimg">
                 <img class="postImage" src="/images/Artist-1.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textArtistPost font-bold">Artist Name : Ekko</h1>
                 <p class="ml-2 textArtistPost text-sm">Follower : 15000 people</p>
@@ -72,7 +72,7 @@
                 <img class="postImage" src="/images/Artist-4.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textArtistPost font-bold">Artist Name : Koi</h1>
                 <p class="ml-2 textArtistPost text-sm">Follower : 9740 people</p>
-            </div>
+            </div> --}}
         </div>
     </div>
 

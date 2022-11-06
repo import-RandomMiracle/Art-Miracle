@@ -8,7 +8,7 @@
     <div class="flex justify-center">
         <div class="linerectangle"></div>
     </div>
-    <div class="grid grid-cols-3 mt-10 space-y-5">
+    <div class="grid grid-cols-3 mt-10 text-white underline">
         @include('layouts.tagcard')
     </div>
 @endsection

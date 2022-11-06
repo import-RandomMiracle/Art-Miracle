@@ -122,6 +122,10 @@ Route::get('/artwork',function () {
     return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);
 });
 
+Route::get('/home',function () {
+    return view('home', ['artworks' => ResourceController::getJson('artwork/most/4'),'users' => ResourceController::getJson('artist/most/4')]);
+});
+
 Route::get('/test',function () {
     return view('test');
 });
