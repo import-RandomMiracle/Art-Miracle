@@ -12,6 +12,9 @@
         </div>
     </div>
     <div class="flex justify-center">
+
+        <button class="walletButton walletButtonResponsive flex justify-center space-x-3" onclick="document.location='wallet/transfer'">
+
         <button id="myBtn" class="walletButton flex justify-center space-x-3" onclick="document.location='wallet/transfer'">
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cash-coin mt-1.5" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
@@ -22,6 +25,7 @@
               <p class="mt-1.5">Transfer Money</p>
             </button>
     </div>
+@endsection
 
     <div id="myModal" class="modal">
 
@@ -60,3 +64,4 @@
     }
 </script>
 @endsection
+
