@@ -8,15 +8,11 @@
     @vite('resources/css/app.css','resources/scss/app.scss', 'resources/js/app.js')
 </head>
 <body class="min-h-screen backgroundHome">
-
-    @if($currentUser['data']['role'] == 'ADMIN')
-            @include('layouts.adminnav')
-    @elseif($currentUser['data']['role'] == 'USER')
-            @include('layouts.navbaruser')
+    @if($currentUser['data']['role'] == 'USER')
+        @include('layouts.navbarmanu')
     @else
-            @include('layouts.navbar')
+        @include('layouts.navbar')
     @endif
-        
 
     <div class="mx-auto max-w-6xl">
         @yield('content')

@@ -13,7 +13,8 @@
     <div class="dropdown-content justify-items-start">
         <a href="/account">Profile</a>
         <a href="#">Notification</a>
+        <a href="sendfeedback">Feedback</a>
         <div class="linerectangleBlack w-full"></div>
-        <a href="#">Logout</a>
+        <a href="/login">Logout</a>
     </div>
 </div>

@@ -27,7 +27,7 @@ class ResourceController extends Controller
         $client = new Client();
         $res = $client->request('GET', $url, [
             'headers' => $headers,
-            'timeout' => 10
+            'timeout' => 20
         ]);
 
         $json = json_decode($res->getBody(), true);
