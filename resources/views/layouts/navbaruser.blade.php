@@ -23,16 +23,16 @@
                 @auth
 
                 @else
-                    @if (Route::has('login'))
+                    @if ($currentUser['data']['role'] == 'USER')
                         <div class="hiddenTab fixed top-0 right-0 px-6 py-4 topnavMenu">
 
                             @auth
                                 <a href="{{ url('/dashboard') }}" class="text-sm text-white dark:text-white underline">Dashboard</a>
                             @else
-                                <a class="active" style="float: left" href="#about">About</a>
-                                <a class="ml-4" style="float: left" href="benefits">Benefits</a>
-                                <a class="ml-4" style="float: left" href="faq">FAQ</a>
-                                <a class="ml-4" style="float: left" href="contact">Contact</a>
+                                <a class="active" style="float: left" href="/home/about">About</a>
+                                <a class="ml-4" style="float: left" href="/home/benefits">Benefits</a>
+                                <a class="ml-4" style="float: left" href="/home/faq">FAQ</a>
+                                <a class="ml-4" style="float: left" href="/home/contact">Contact</a>
                                 <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search..">
                                 @include('layouts.infouser')
                             @endauth

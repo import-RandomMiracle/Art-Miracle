@@ -8,6 +8,9 @@
         </div>
         @include('layouts.manusort')
         <div class="mr-30 ml-30">
+            <div>
+                
+            </div>
             <ul class="flex justify-center imageWrap">
                 <li>
                     <div class="postimg imageScale">

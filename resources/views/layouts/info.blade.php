@@ -2,12 +2,12 @@
 
     <ul class="flex wrapScreen justify-center mt-40 space-x-7">
         <li>
-            <img class="rounded-full mb-4" src="/images/Profile-2.png" alt="UserProfile" height="" width="200" >
+            <img class="rounded-full mb-4" src="http://localhost:3000{{$currentUser['data']['profile']}}" alt="UserProfile" height="" width="200" >
         </li>
         <li>
             <div class="space-y-5">
                 <div class="flex space-x-10 mr-6">
-                    <h1 class="text-white text-xl font-bold">{{$user['data']['display_name']}}</h1>
+                    <h1 class="text-white text-xl font-bold">{{$currentUser['data']['display_name']}}</h1>
                     <button class="editProfileButton text-white text-sm">Edit Profile</button>
                     <a href="/wallet">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#FFFFFF" class="bi bi-wallet2" viewBox="0 0 16 16">
@@ -23,11 +23,11 @@
                 <ul class="space-y-5">
                     <li class="flex justify-start space-x-10 text-white mr-6">
                         <div class="flex space-x-2">
-                            <p>{{$user['data']['follower_count']}}</p>
+                            <p>{{$currentUser['data']['follower_count']}}</p>
                             <p>followers</p>
                         </div>
                         <div class="flex space-x-2">
-                            <p>{{$user['data']['following_count']}}</p>
+                            <p>{{$currentUser['data']['following_count']}}</p>
                             <p>following</p>
                         </div>
                     </li>
