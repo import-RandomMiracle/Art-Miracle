@@ -40,7 +40,7 @@ class AuthenticatedSessionController extends Controller
         $response = $client->request('POST', config('services.api.address') . "/api/login", ['json' => ['email' => $request->email, 'password' => $request->password]]);
         setcookie("token", json_decode($response->getBody())->authorisation->token);
         // return $_COOKIE["token"];
-        return view('home');
+        return redirect('home');
     }
 
     /**

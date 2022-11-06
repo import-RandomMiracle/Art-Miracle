@@ -34,7 +34,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="recButton mr-10 text-xl text-white">
+                    <button class="recButton mr-10 text-xl text-white" onclick="document.location='/category'">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" class="bi bi-postcard-fill svgButton" viewBox="0 0 16 16">
                             <path d="M11 8h2V6h-2v2Z"/>
                             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm8.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 0-1H2.5a.5.5 0 0 0-.5.5ZM2.5 7a.5.5 0 0 0 0 1H6a.5.5 0 0 0 0-1H2.5ZM2 9.5a.5.5 0 0 0 .5.5H6a.5.5 0 0 0 0-1H2.5a.5.5 0 0 0-.5.5Zm8-4v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5Z"/>
@@ -43,7 +43,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="recButton mr-10 text-xl text-white">
+                    <button class="recButton mr-10 text-xl text-white" onclick="document.location='/tag'">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" class="bi bi-tags-fill svgButton" viewBox="0 0 16 16">
                             <path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586V2zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
                             <path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043-7.457-7.457z"/>
@@ -52,7 +52,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="recButton mr-10 text-xl text-white">
+                    <button class="recButton mr-10 text-xl text-white" onclick="document.location='/account'">
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#FFFFFF" class="bi bi-archive-fill svgButton" viewBox="0 0 16 16">
                             <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
                         </svg>
