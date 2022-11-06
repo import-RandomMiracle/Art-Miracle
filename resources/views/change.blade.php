@@ -11,13 +11,11 @@
                 </form>
             </div>
     
-            <div class="text-white space-y-3">
+            <div class="text-white space-y-5">
                 <h1>User Name</h1>
                 <input class="w-full" type="text" id="name">
                 <h1>Artist Name</h1>
                 <input class="w-full" type="text" id="artist_name">
-                <h1>Citizen ID</h1>
-                <input class="w-full" type="text" id="citizen_id">
                 <h1>Phone Number</h1>
                 <input class="w-full" type="text" id="phone_number">
                 <h1>Confirm Password</h1>

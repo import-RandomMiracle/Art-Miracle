@@ -5,8 +5,8 @@
 /*---------------------shape-bar----------------------*/
 
 .rectangle {
-    height: 160px;
-    width: 900px;
+    height: 140px;
+    width: 75%;
     background-color: #FFFFFF;
     opacity: 70%;
     border-radius: 15px;
@@ -48,6 +48,14 @@
     height: 3px;
     width: 70%;
     background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.linerectangleBlack {
+    margin-left: 6px;
+    height: 2px;
+    width: 90%;
+    background-color: #000000;
     border-radius: 10px;
 }
 
@@ -94,7 +102,7 @@
 .walletButton {
     background-color: #FFCB44;
     height: 40px;
-    width: 25%;
+    width: 30%;
     border-radius: 10px;
 }
 
@@ -194,8 +202,14 @@
 .topnav {
     padding: auto;
     background: #00264D;
-    z-index: 1;
+    z-index: 10;
   }
+
+.topnavMenu {
+    padding: auto;
+    background: #00264D;
+    z-index: 1;
+}
 
   /* Style the links inside the navigation bar */
   .topnav a {
@@ -207,11 +221,21 @@
     font-size: 17px;
   }
 
+.topnavMenu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
   /* Change the color of links on hover */
 
   /* Add a color to the active/current link */
 
-  .topnav .search-container button {
+  .topnavMenu .search-container button {
     float: right;
     padding: 6px 10px;
     margin-top: 8px;
@@ -222,15 +246,15 @@
     cursor: pointer;
   }
 
-  .topnav .search-container button:hover {
+  .topnavMenu .search-container button:hover {
     background: #ccc;
   }
 
   @media screen and (max-width: 600px) {
-    .topnav .search-container {
+    .topnavMenu .search-container {
       float: none;
     }
-    .topnav a, .topnav input[type=text], .topnav .search-container button {
+    .topnavMenu a, .topnavMenu input[type=text], .topnavMenu .search-container button {
       float: none;
       display: block;
       text-align: left;
@@ -238,7 +262,7 @@
       margin: 0;
       padding: 14px;
     }
-    .topnav input[type=text] {
+    .topnavMenu input[type=text] {
       border: 1px solid #ccc;
     }
   }
@@ -263,6 +287,15 @@
     width: 250px;
     height: 60px;
     border-radius: 20px;
+}
+
+.deleteButton {
+    color: #00264D;
+    background-color: red;
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    opacity: 85%;
 }
 
 .postButton {
@@ -397,6 +430,7 @@
     animation-delay: 0s;
     animation-duration: 11s;
 }
+
 @keyframes animate {
 
     0%{
@@ -414,6 +448,134 @@
 }
 /*-----------------------------------------------------*/
 
+/*-------------------responsive------------------------*/
+
+@media screen and (max-width: 1020px) {
+
+
+    .hiddenTab {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .logoScale {
+        height: auto;
+        width: 10%;
+    }
+
+    .fontSizeCenter {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .fontSize {
+        font-size: 1.5rem;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .wrapScreen {
+        flex-wrap: wrap;
+    }
+
+    .imageWrap {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .gridScreen {
+        margin-top: 9rem;
+        grid-template-columns: 1fr;
+    }
+
+    .marginLeft {
+        margin-left: 2.25rem;
+    }
+
+    .marginCommentLeft {
+        margin-left: 0.5rem;
+    }
+
+    .marginRewardLeft {
+        margin-left: 0px;
+    }
+
+    .walletButtonResponsive {
+        background-color: #FFCB44;
+        height: 40px;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .hiddenButton {
+        display: none;
+    }
+
+    .showButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gapCols {
+        column-gap: 2.5rem;
+    }
+
+    .gridTwoCols {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        font-size: 0.75rem;
+        margin-left: 1rem;
+    }
+
+    .imageReport {
+        height: auto;
+        width: 80%;
+    }
+
+    .marginZeroLeft {
+        margin-left: 0px;
+    }
+}
+
+/*-------------------responsive admin menu------------------------*/
+@media screen and (max-width: 600px) {
+    /*.gridCols {*/
+    /*    grid-template-rows: repeat(2, minmax(0, 1fr));*/
+    /*}*/
+
+    .flexCols {
+        flex-direction: column;
+    }
+
+    .size {
+        font-size: 1rem;
+    }
+
+    .marginLeft {
+        margin-left: 40px;
+    }
+
+    .flexCenter {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .flexCenterEightRem {
+        margin-left: 8rem;
+    }
+}
 
 /* The Modal (background) */
 .modal {
@@ -428,9 +590,9 @@
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
-  
+
   /* Modal Content/Box */
-  
+
   /* The Close Button */
   .close {
     color: #aaa;
@@ -438,10 +600,51 @@
     font-size: 28px;
     font-weight: bold;
   }
-  
+
   .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
   }
+
+/*------------------------------------------------------------------*/
+/* Style The Dropdown Button */
+.dropbtn {
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
