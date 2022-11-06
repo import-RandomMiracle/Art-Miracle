@@ -20,7 +20,7 @@
             <p>1340</p>
             <p>Points</p>
         </div>
-        <div class="space-y-5 mt-5">
+        <div class="space-y-5 mt-5 mb-8">
             <div class="flex justify-center">
                 <button class="walletButton" onclick="document.location='wallet/transfer'">Transfer Money</button>
             </div>

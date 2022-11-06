@@ -8,7 +8,10 @@
     @vite('resources/css/app.css','resources/scss/app.scss', 'resources/js/app.js')
 </head>
 <body class="min-h-screen backgroundHome">
-    @include('layouts.navbar')
+    @if(Route::has('user'))
+            @include('layouts.navbaruser')
+    @endif
+        @include('layouts.navbar')
 
     <div class="mx-auto max-w-6xl">
         @yield('content')

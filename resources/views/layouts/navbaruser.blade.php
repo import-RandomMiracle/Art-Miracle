@@ -34,12 +34,7 @@
                                 <a class="ml-4" style="float: left" href="faq">FAQ</a>
                                 <a class="ml-4" style="float: left" href="contact">Contact</a>
                                 <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search..">
-                                <a href="{{ route('login') }}" class="text-sm text-white dark:text-white underline">Log in</a>
-
-
-                                @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="ml-4 text-sm text-white underline">Register</a>
-                                @endif
+                                @include('layouts.infouser')
                             @endauth
                         </div>
                     @endif

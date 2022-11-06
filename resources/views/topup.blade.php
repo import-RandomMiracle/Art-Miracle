@@ -3,19 +3,19 @@
 @section('content')
     <div class="flex justify-center mt-40">
         <input type="radio" id="html" name="fav_language" value="HTML">
-        <label class="text-white ml-5" for="html">300 Bath</label><br>
+        <label class="text-white ml-5" for="html">300 Baht</label><br>
     </div>
     <div class="flex justify-center m-10">
         <input type="radio" id="html" name="fav_language" value="HTML">
-        <label class="text-white ml-5" for="html">500 Bath</label><br>
+        <label class="text-white ml-5" for="html">500 Baht</label><br>
     </div>
     <div class="flex justify-center m-10">
         <input type="radio" id="html" name="fav_language" value="HTML">
-        <label class="text-white ml-5" for="html">1000 Bath</label><br>
+        <label class="text-white ml-5" for="html">1000 Baht</label><br>
     </div>
     <div class="flex justify-center m-10">
         <input type="radio" id="html" name="fav_language" value="HTML">
-        <label class="text-white ml-5" for="html">1500 Bath</label><br>
+        <label class="text-white ml-5" for="html">1500 Baht</label><br>
     </div>
     <div class="flex justify-center">
         <button class="walletButton flex justify-center space-x-3" onclick="document.location='wallet/transfer'">

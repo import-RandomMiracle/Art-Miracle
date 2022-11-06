@@ -2,8 +2,8 @@
 
 @section('content')
     <div>
-        <div class="grid grid-cols-4 items-center">
-            <div class="postimg">
+        <div class="grid gridTwoCols grid-cols-4 items-center">
+            <div class="postimg gapCols imageReport">
                 <a href="/account/postreport/view">
                     <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                     <h1 class="ml-2 textpost font-bold">Product Name : Sushi
@@ -14,7 +14,7 @@
                     <p class="ml-2 textpost text-sm">Price : 7.00 AC</p>
                 </a>
             </div>
-            <div class="postimg">
+            <div class="postimg gapCols imageReport">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -23,7 +23,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 10.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg gapCols imageReport">
                 <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -32,7 +32,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 8.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg gapCols imageReport">
                 <img class="postImage" src="/images/Artwork-4.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Donut
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -41,7 +41,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Sushi
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -50,7 +50,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 7.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -59,7 +59,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 10.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -68,7 +68,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 8.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-4.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Donut
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -77,7 +77,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Sushi
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -86,7 +86,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 7.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -95,7 +95,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 10.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -104,7 +104,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 8.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-4.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Donut
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -113,7 +113,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-1.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Sushi
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -122,7 +122,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 7.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -131,7 +131,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 10.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-3.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Coffee
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -140,7 +140,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 8.00 AC</p>
             </div>
-            <div class="postimg">
+            <div class="postimg imageReport">
                 <img class="postImage" src="/images/Artwork-4.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Donut
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -149,6 +149,7 @@
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
             </div>
+
         </div>
     </div>
 @endsection
