@@ -13,7 +13,7 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center">
             @include('layouts.post')
-            <div class="postimg">
+            {{-- <div class="postimg">
                 <img class="postImage" src="/images/Artwork-2.png" alt="Miracle Work" height="" width="300" >
                 <h1 class="ml-2 textpost font-bold">Product Name : Pancake
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-heart float-right mr-4 mt-4" viewBox="0 0 16 16">
@@ -147,7 +147,7 @@
                     </svg>
                 </h1>
                 <p class="ml-2 textpost text-sm">Price : 5.00 AC</p>
-            </div>
+            </div> --}}
         </div>
     </div>
 

@@ -22,7 +22,7 @@ class ResourceController extends Controller
             'Accept' => 'application/json',
         ];
 
-        $url = config('services.api.address') . '/api/'. str($name);
+        $url = config('services.api.address') . '/api/' . str($name);
         $client = new Client();
         $res = $client->request('GET', $url, [
             'headers' => $headers,
@@ -31,5 +31,35 @@ class ResourceController extends Controller
 
         $json = json_decode($res->getBody(), true);
         return $json;
+    }
+
+    public function storeImage(Request $request)
+    {
+        $headers = [
+            'Authorization' => 'Bearer ' . $_COOKIE['token'],
+            'Accept' => 'application/json',
+        ];
+
+        $url = config('services.api.address') . '/api/image/upload';
+        $client = new Client();
+
+        $file = request('avatar');
+        $file_path = $file->getPathname();
+        $file_mime = $file->getMimeType('image');
+        $file_uploaded_name = $file->getClientOriginalName();
+        $response = $client->request("POST", $url, [
+            'headers' => $headers,
+            'timeout' => 10,
+            'multipart' => [
+                [
+                    'name' => 'avatar',
+                    'filename' => $file_uploaded_name,
+                    'Mime-Type' => $file_mime,
+                    'contents' => fopen($file_path, 'r'),
+                ],
+            ]
+        ]);
+
+        return "upload succ";
     }
 }
