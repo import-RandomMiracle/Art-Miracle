@@ -32,7 +32,7 @@
                                 <a class="ml-4" style="float: left" href="/artwork">Artwork</a>
                                 <a class="ml-4" style="float: left" href="/artist">Artist</a>
                                 <a class="ml-4" style="float: left" href="/category">Category</a>
-                                <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search..">
+                                {{-- <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search.."> --}}
                                 @include('layouts.infouser')
                             @endauth
                         </div>
