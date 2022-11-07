@@ -8,7 +8,7 @@
     <div class="flex justify-center">
         <div class="linerectangle"></div>
     </div>
-    <div class="grid grid-cols-2 mt-10">
+    <div class="grid grid-col-1 mt-10 mx-auto w-7/12 space-y-10">
         @include('layouts.categorycard')
     </div>
 @endsection

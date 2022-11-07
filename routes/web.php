@@ -63,6 +63,11 @@ Route::get('/wallet/transfer', function () {
     return view('transfer', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
+Route::get('/wallet/topup/qr', function () {
+    return view('qr', ['currentUser' => ResourceController::getJson('user/current')]);
+});
+
+
 Route::get('/wallet/topup', function () {
     return view('topup', ['currentUser' => ResourceController::getJson('user/current')]);
 });
@@ -80,8 +85,12 @@ Route::get('/artist', function () {
     return view('artist', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/feedback', function () {
+Route::get('/sendfeedback', function () {
     return view('sendfeedback', ['currentUser' => ResourceController::getJson('user/current')]);
+});
+
+Route::get('/sell', function () {
+    return view('sell', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/changetoartist', function () {

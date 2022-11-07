@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.newmain')
 
 @section('content')
         <div class="mt-48">
@@ -6,7 +6,7 @@
                   enctype="multipart/form-data">
                 @csrf
 
-                <div class="flex flex-row justify-center">
+                <div class="flex flex-row justify-center text-white">
                     <div class="">
                         <ul>
                             <li class="ml-20">

@@ -175,6 +175,13 @@
 .fontYellowColor {
     color: #FFCB44;
 }
+
+.confirmButton {
+    background-color: #FFCB44;
+    height: 48px;
+    width: 25%;
+    border-radius: 10px;
+}
 /*----------------------------------------------------*/
 
 /*----------------------Post--------------------------*/

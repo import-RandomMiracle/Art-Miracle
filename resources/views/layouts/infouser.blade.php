@@ -13,7 +13,8 @@
     <div class="dropdown-content ">
         <a href="/account">Profile</a>
         <a href="#">Notification</a>
-        <a href="sendfeedback">Feedback</a>
+        <a href="/sendfeedback">Feedback</a>
+        <a href="/sell">Post</a>
         <div class="linerectangleBlack w-full"></div>
         <a href="/login">Logout</a>
     </div>
