@@ -20,7 +20,7 @@
         </div> 
     </div>
     <div>
-        <form method="post" action="{{ route('buy.artwork',['artwork' => $artwork['data']['id']]) }}">
+        <form method="post" action="{{ redirect()->route('buy.artwork',['artwork' => $artwork['data']['id']]) }}">
             @csrf
             <div class="flex justify-center space-x-5">
                 <button type="submit" class="buyNowButton text-xl font-bold">

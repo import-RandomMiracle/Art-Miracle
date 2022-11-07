@@ -51,9 +51,9 @@ Route::get('/home/contact', function () {
     return view('contact', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/artwork/detail', function () {
-    return view('detail', ['currentUser' => ResourceController::getJson('user/current')]);
-});
+// Route::get('/artwork/detail', function () {
+//     return view('detail', ['currentUser' => ResourceController::getJson('user/current')]);
+// });
 
 Route::get('/wallet', function () {
     return view('wallet', ['currentUser' => ResourceController::getJson('user/current')]);
