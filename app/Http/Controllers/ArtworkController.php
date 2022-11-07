@@ -6,7 +6,8 @@ use GuzzleHttp\Client;
 
 class ArtworkController extends Controller
 {
-    public static function editArtwork(string $artworkId, float $price, string $description, string $category) {
+    public static function editArtwork(string $artworkId, float $price, string $description, string $category)
+    {
         $headers = [
             'Authorization' => 'Bearer ' . $_COOKIE['token'],
             'Accept' => 'application/json',
@@ -35,5 +36,37 @@ class ArtworkController extends Controller
 
         $json = json_decode($res->getBody(), true);
         return $json;
+    }
+
+    public function show($id)
+    {
+        $currentUser = ResourceController::getJson('user/current');
+        $artwork = ResourceController::getJson('artworks/' . $id);
+        return view('detail', ['artwork' => $artwork,
+            'currentUser' => $currentUser]);
+    }
+
+    public function index()
+    {
+        $currentUser = ResourceController::getJson('user/current');
+        $artworks = ResourceController::getJson('artworks');
+        return view('artwork', ['artworks' => $artworks,
+            'currentUser' => $currentUser]);
+    }
+
+    public function buy($id)
+    {
+        $headers = [
+            'Authorization' => 'Bearer ' . $_COOKIE['token'],
+            'Accept' => 'application/json',
+        ];
+
+        $url = config('services.api.address') . '/api/buy/artwork';
+        $client = new Client();
+        $res = $client->request('POST', $url, [
+            'headers' => $headers,
+            'timeout' => 10,
+            'body' => ['artwork' => $id]
+        ]);
     }
 }

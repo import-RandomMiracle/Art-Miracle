@@ -7,9 +7,9 @@
                 @include('layouts.detailshow')
                 <div class="ml-28 marginRewardLeft">
                     <h1 class="text-gray-300 text-xl font-light">Reward</h1>
-                    <h1 class="text-white text-2xl font-semibold mb-3">30 POINT</h1>
+                    <h1 class="text-white text-2xl font-semibold mb-3">{{$artwork['data']['point']}} POINT</h1>
                 </div>
-                <form method="post" action="{{ route('image.store',['artwork' => $artwork->id]) }}">
+                <form method="post" action="{{ route('image.store',['artwork' => $artwork['data']['id']]) }}">
                     @csrf
                     <div class="flex justify-center space-x-5">
                         <button type="submit" class="buyNowButton text-xl font-bold">
@@ -40,39 +40,39 @@
 
     <div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      @include('layouts.popupgiftto')
+        <!-- Modal content -->
+        <div class="modal-content">
+            @include('layouts.popupgiftto')
+        </div>
+
     </div>
-  
-  </div>
 
-<script>
+    <script>
         // Get the modal
-    var modal = document.getElementById("myModal");
+        var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on the button, open the modal
-    btn.onclick = function() {
-    modal.style.display = "block";
-    }
+        // When the user clicks on the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-    modal.style.display = "none";
-    }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-    }
-</script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 @endsection

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ImageController;
+use App\Http\Controllers\ArtworkController;
 use App\Http\Controllers\BuyController;
 use App\Http\Controllers\ResourceController;
 use Illuminate\Support\Facades\Route;
@@ -28,8 +29,8 @@ Route::get('/tag', function () {
     return view('tag');
 });
 
-Route::post('image/store', [ImageController::class,'storeImage'])->name('image.store');
-Route::post('buy/artwork', [BuyController::class,'buyArtwork'])->name('buy.artwork');
+Route::post('image/store', [ImageController::class, 'storeImage'])->name('image.store');
+//Route::post('buy/artwork', [BuyController::class, 'buyArtwork'])->name('buy.artwork');
 
 // Route::get('/home', function () {
 //     return redirect('home');
@@ -51,9 +52,21 @@ Route::get('/home/contact', function () {
     return view('contact');
 });
 
-Route::get('/artwork/detail', function () {
-    return view('detail');
+//Route::get('/artwork/detail', function () {
+//    return view('detail');
+//});
+
+Route::controller(ArtworkController::class)->group(function () {
+    Route::get('artwork', 'index')
+        ->name("artworks.index");
+    Route::get('artwork/detail/{id}', 'show')
+        ->name('artwork.detail.id');
+    Route::post('artwork/buy/{id}', 'buy');
+    Route::get('artwork/download/{id}', function () {
+        return view(('artworkdownload'));
+    });
 });
+
 
 Route::get('/wallet', function () {
     return view('wallet');
@@ -67,9 +80,9 @@ Route::get('/wallet/topup', function () {
     return view('topup');
 });
 
-Route::get('/artwork', function () {
-    return view('artwork');
-});
+//Route::get('/artwork', function () {
+//    return view('artwork');
+//});
 
 Route::get('/artist', function () {
     return view('artist');
@@ -85,10 +98,6 @@ Route::get('/changetoartist', function () {
 
 Route::get('/account/artworkcomment', function () {
     return view(('artworkcomment'));
-});
-
-Route::get('/account/artworkdownload', function () {
-    return view(('artworkdownload'));
 });
 
 Route::get('/account/artworkedit', function () {
@@ -139,17 +148,21 @@ Route::get('/tag', function () {
     return view('tag', ['tags' => ResourceController::getJson('tags')]);
 });
 
-Route::get('/artwork', function () {
-    return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);
-});
+//Route::controller(ArtistController::class)->group(function (){
+//    Route::get('artists/{artist}/artworks','artworkOfArtist');
+//});
 
-Route::get('/home',function () {
+
+Route::get('/home', function () {
     return view('home', ['artworks' => ResourceController::getJson('artwork/most/4'),
         'users' => ResourceController::getJson('artist/most/4'),
         'currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/account',function () {
+//Route::get('/artwork', function () {
+//    return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);
+
+Route::get('/account', function () {
     return view('account', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
