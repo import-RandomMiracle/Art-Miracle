@@ -52,12 +52,11 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request)
     {
-        Auth::guard('web')->logout();
+        $client = new Client();
 
-        $request->session()->invalidate();
-
-        $request->session()->regenerateToken();
-
-        return redirect('/');
+        $response = $client->request('POST', config('services.api.address') . "/api/logout");
+        setcookie("token", "");
+        // return $_COOKIE["token"];
+        return redirect('home');
     }
 }

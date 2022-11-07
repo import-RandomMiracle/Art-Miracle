@@ -34,11 +34,18 @@ class RegisteredUserController extends Controller
      */
     public function store(Request $request)
     {
-        // $request->validate([
-        //     'name' => ['required', 'string', 'max:255'],
-        //     'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-        //     'password' => ['required'],
-        // ]);
+        $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required'],
+        ]);
+
+        $client = new Client();
+
+        $response = $client->request('POST', config('services.api.address') . "/api/register", ['json' => ['name' => $request->name, 'email' => $request->email, 'password' => $request->password]]);
+        setcookie("token", json_decode($response->getBody())->authorisation->token);
+        // return $_COOKIE["token"];
+        return redirect('home');
 
         // $user = User::create([
         //     'name' => $request->name,
@@ -51,13 +58,5 @@ class RegisteredUserController extends Controller
         // Auth::login($user);
 
         // return redirect(RouteServiceProvider::HOME);
-
-        $client = new Client();
-
-        $response = $client->request('POST', config('services.api.address') . "/api/register", ['json' => ['user_name' => $request->name, 'email' => $request->email, 'password' => $request->password]]);
-        setcookie("token", json_decode($response->getBody())->authorisation->token);
-        // return $_COOKIE["token"];
-        return redirect('home');
-        
     }
 }

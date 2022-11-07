@@ -54,19 +54,19 @@ class ArtworkController extends Controller
             'currentUser' => $currentUser]);
     }
 
-    public function buy($id)
-    {
-        $headers = [
-            'Authorization' => 'Bearer ' . $_COOKIE['token'],
-            'Accept' => 'application/json',
-        ];
+    // public function buy($id)
+    // {
+    //     $headers = [
+    //         'Authorization' => 'Bearer ' . $_COOKIE['token'],
+    //         'Accept' => 'application/json',
+    //     ];
 
-        $url = config('services.api.address') . '/api/buy/artwork';
-        $client = new Client();
-        $res = $client->request('POST', $url, [
-            'headers' => $headers,
-            'timeout' => 10,
-            'body' => ['artwork' => $id]
-        ]);
-    }
+    //     $url = config('services.api.address') . '/api/buy/artwork';
+    //     $client = new Client();
+    //     $res = $client->request('POST', $url, [
+    //         'headers' => $headers,
+    //         'timeout' => 10,
+    //         'body' => ['artwork' => $id]
+    //     ]);
+    // }
 }

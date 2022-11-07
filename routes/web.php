@@ -22,7 +22,8 @@ Route::get('/home', function () {
 });
 
 Route::get('/category', function () {
-    return view('category', ['currentUser' => ResourceController::getJson('user/current'), 'categories' => ResourceController::getJson('categories')]);
+    return view('category', ['currentUser' => ResourceController::getJson('user/current'),
+     'categories' => ResourceController::getJson('categories')]);
 });
 
 Route::get('/tag', function () {
@@ -30,7 +31,7 @@ Route::get('/tag', function () {
 });
 
 Route::post('image/store', [ImageController::class, 'storeImage'])->name('image.store');
-//Route::post('buy/artwork', [BuyController::class, 'buyArtwork'])->name('buy.artwork');
+Route::post('buy/artwork', [BuyController::class, 'buyArtwork'])->name('buy.artwork');
 
 // Route::get('/home', function () {
 //     return redirect('home');
@@ -61,7 +62,7 @@ Route::controller(ArtworkController::class)->group(function () {
         ->name("artworks.index");
     Route::get('artwork/detail/{id}', 'show')
         ->name('artwork.detail.id');
-    Route::post('artwork/buy/{id}', 'buy');
+    // Route::post('artwork/buy/{id}', 'buy');
     Route::get('artwork/download/{id}', function () {
         return view(('artworkdownload'));
     });
@@ -174,7 +175,8 @@ Route::get('/home', function () {
 //    return view('artwork', ['artworks' => ResourceController::getJson('artworks')]);
 
 Route::get('/account', function () {
-    return view('account', ['currentUser' => ResourceController::getJson('user/current')]);
+    return view('account', ['currentUser' => ResourceController::getJson('user/current'),
+    'artworks' => ResourceController::getJson('artworks')]);
 });
 
 Route::get('/test', function () {
