@@ -22,11 +22,11 @@ Route::get('/home', function () {
 });
 
 Route::get('/category', function () {
-    return view('category');
+    return view('category', ['currentUser' => ResourceController::getJson('user/current'), 'categories' => ResourceController::getJson('categories')]);
 });
 
 Route::get('/tag', function () {
-    return view('tag');
+    return view('tag', ['currentUser' => ResourceController::getJson('user/current'), 'tags' => ResourceController::getJson('tags'),'currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::post('image/store', [ImageController::class, 'storeImage'])->name('image.store');
@@ -37,19 +37,19 @@ Route::post('image/store', [ImageController::class, 'storeImage'])->name('image.
 // });
 
 Route::get('/home/about', function () {
-    return view('about');
+    return view('about', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/home/benefits', function () {
-    return view('benefits');
+    return view('benefits', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/home/faq', function () {
-    return view('faq');
+    return view('faq', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/home/contact', function () {
-    return view('contact');
+    return view('contact', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 //Route::get('/artwork/detail', function () {
@@ -69,15 +69,15 @@ Route::controller(ArtworkController::class)->group(function () {
 
 
 Route::get('/wallet', function () {
-    return view('wallet');
+    return view('wallet', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/wallet/transfer', function () {
-    return view('transfer');
+    return view('transfer', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/wallet/topup', function () {
-    return view('topup');
+    return view('topup', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 //Route::get('/artwork', function () {
@@ -85,67 +85,69 @@ Route::get('/wallet/topup', function () {
 //});
 
 Route::get('/artist', function () {
-    return view('artist');
+    return view('artist', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/feedback', function () {
-    return view('sendfeedback');
+    return view('sendfeedback', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/changetoartist', function () {
-    return view('change');
+    return view('change', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/account/artworkcomment', function () {
-    return view(('artworkcomment'));
+    return view('artworkcomment', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/account/artworkedit', function () {
-    return view(('artworkedit'));
+    return view('artworkedit', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/account/artworkdelete', function () {
-    return view(('artworkdelete'));
+    return view('artworkdelete', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/account', function () {
-    return view('account');
+    return view('account', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/account/artistreport', function () {
-    return view('artistreport');
+Route::get('/admin/artistreport', function () {
+    return view('artistreport', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/account/postreport', function () {
-    return view('postreport');
+Route::get('/admin/artistreport', function () {
+    return view('artistreport', ['currentUser' => ResourceController::getJson('user/current'),
+                                'reports' => ResourceController::getJson('reports')]);
 });
 
-Route::get('/account/postreport/view', function () {
-    return view('viewportreport');
+Route::get('/admin/postreport', function () {
+    return view('postreport', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
-Route::get('/account/feedback', function () {
-    return view('feedback');
+Route::get('/admin/postreport', function () {
+    return view('postreport', ['currentUser' => ResourceController::getJson('user/current'), 
+                                'reports' => ResourceController::getJson('reports')]);
 });
 
-Route::get('/account/commentreport', function () {
-    return view('commentreport');
+Route::get('/admin/postreport/view', function () {
+    return view('viewportreport', ['currentUser' => ResourceController::getJson('user/current')]);
+});
+
+Route::get('/admin/feedback', function () {
+    return view('feedback', ['currentUser' => ResourceController::getJson('user/current')]);
+});
+
+Route::get('/admin/commentreport', function () {
+    return view('commentreport', ['currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/artist', function () {
-    return view('artist', ['users' => ResourceController::getJson('users')]);
+    return view('artist', ['users' => ResourceController::getJson('users'),'currentUser' => ResourceController::getJson('user/current')]);
 });
 
 Route::get('/account/artworkcomment', function () {
-    return view('artworkcomment', ['artworks' => ResourceController::getJson('artworks')]);
-});
-
-Route::get('/category', function () {
-    return view('category', ['categories' => ResourceController::getJson('categories')]);
-});
-
-Route::get('/tag', function () {
-    return view('tag', ['tags' => ResourceController::getJson('tags')]);
+    return view('artworkcomment', ['artworks' => ResourceController::getJson('artworks'),'currentUser' => ResourceController::getJson('user/current')]);
 });
 
 //Route::controller(ArtistController::class)->group(function (){
@@ -177,5 +179,5 @@ Route::get('/dashboard', function () {
 require __DIR__ . '/auth.php';
 
 Route::get('/add-sell', function () {
-    return view('sell');
+    return view('sell', ['currentUser' => ResourceController::getJson('user/current')]);
 });

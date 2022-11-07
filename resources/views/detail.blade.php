@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.newmain')
 
 @section('content')
     <div class="float-left mr-12">

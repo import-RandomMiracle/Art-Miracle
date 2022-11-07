@@ -9,7 +9,7 @@
 </head>
 <body class="min-h-screen backgroundHome">
     @if($currentUser['data']['role'] == 'USER')
-        @include('layouts.navbaruser')
+        @include('layouts.navbarmanu')
     @else
         @include('layouts.navbar')
     @endif

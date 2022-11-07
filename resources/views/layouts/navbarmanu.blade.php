@@ -1,5 +1,4 @@
 <nav>
-
     <div class="flex items-top backgroundWelcome topnav">
 
         <div>
@@ -29,10 +28,10 @@
                             @auth
                                 <a href="{{ url('/dashboard') }}" class="text-sm text-white dark:text-white underline">Dashboard</a>
                             @else
-                                <a class="active" style="float: left" href="/home/about">About</a>
-                                <a class="ml-4" style="float: left" href="/home/benefits">Benefits</a>
-                                <a class="ml-4" style="float: left" href="/home/faq">FAQ</a>
-                                <a class="ml-4" style="float: left" href="/home/contact">Contact</a>
+                                <a class="active" style="float: left" href="/home">Home</a>
+                                <a class="ml-4" style="float: left" href="/artwork">Artwork</a>
+                                <a class="ml-4" style="float: left" href="/artist">Artist</a>
+                                <a class="ml-4" style="float: left" href="/category">Category</a>
                                 {{-- <input class="ml-4 mt-5" style="float: left" type="text" placeholder="Search.."> --}}
                                 @include('layouts.infouser')
                             @endauth
